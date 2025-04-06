@@ -815,7 +815,7 @@ def wait_for_regex_in_log(
 def is_address_already_in_use(
     server: Server,
     log_file: str,
-    timeout: int = 5,
+    timeout: int = 10,
 ):
     logging.debug(f"checking is address already bind for: {server}")
     timeout_start = time.time()
